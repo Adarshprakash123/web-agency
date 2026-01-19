@@ -46,7 +46,7 @@ export function CTAScene() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          Let's build something
+          Let&apos;s build something
           <br />
           <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
             extraordinary
@@ -60,7 +60,7 @@ export function CTAScene() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Ready to transform your vision into reality? Let's start a conversation.
+          Ready to transform your vision into reality? Let&apos;s start a conversation.
         </motion.p>
 
         <motion.div

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import Image from "next/image";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 
 export function LandingScene() {
@@ -157,14 +158,12 @@ export function LandingScene() {
               
               {/* Image with gradient overlay */}
               <div className="relative w-full h-full z-10">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&q=80"
                   alt="Digital Experience"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    // Fallback to gradient if image fails to load
-                    e.currentTarget.style.display = 'none';
-                  }}
+                  fill
+                  className="object-cover"
+                  unoptimized
                 />
                 {/* Gradient overlay for better integration */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/20 pointer-events-none" />
